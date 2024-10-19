@@ -1,16 +1,23 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Twitter } from "lucide-react"
 import quotes from '@/public/quotes.json'
 
 export function RandomQuoteMachineComponent() {
-  const [quoteNum, setQuoteNum] = useState(Math.floor(Math.random() * quotes.quotes.length))
+  const [quoteNum, setQuoteNum] = useState<number>(null!)
 
+  // next.js hydration issues
+  useEffect(() => {
+    setQuoteNum(Math.floor(Math.random() * quotes.quotes.length))
+  }, [])
   const getNewQuote = () => {
     setQuoteNum(Math.floor(Math.random() * quotes.quotes.length))
+  }
+  if (quoteNum === null) {
+    return <> </>
   }
   const quote = quotes.quotes[quoteNum].quote;
   const author = quotes.quotes[quoteNum].author;
