@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Twitter } from "lucide-react"
-import quotes from '@/app/public/quotes.json'
+import quotes from '@/public/quotes.json'
 
 export function RandomQuoteMachineComponent() {
   const [quoteNum, setQuoteNum] = useState(Math.floor(Math.random() * quotes.quotes.length))
