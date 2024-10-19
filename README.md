@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Random Quote Machine
+
+This project is a Random Quote Machine built using Next.js. It displays random quotes along with their authors and allows users to get a new random quote or tweet the current quote.
+
+## Technology Stack
+
+- Next.js
+- React
+- Tailwind CSS
+- Lucide Icons
+- Radix UI
+- Class Variance Authority
+- clsx
+- TypeScript
+- ESLint
+- PostCSS
+- Tailwind CSS Animate
 
 ## Getting Started
 
