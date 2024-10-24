@@ -16,6 +16,8 @@ This project is a Random Quote Machine built using Next.js. It displays random q
 - PostCSS
 - Tailwind CSS Animate
 
+![Demo](https://github.com/ksio2123/random_quote_machine/blob/main/doc/random_quote_generator_demo.gif)
+
 ## Getting Started
 
 First, run the development server:
